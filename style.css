@@ -3,7 +3,9 @@
 }
 body{
     background: #F3F3F3;
+    position: relative;
 }
+
 header{
     position: fixed;
     width: 100%;
@@ -15,7 +17,8 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    z-index: 0;
+    
 }
 
 footer{
@@ -134,8 +137,133 @@ footer{
     top: 16px;
 }
 
+
+/* pagina inicial */
+
+
+.inicial {
+    background-color: #FFFFFF;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.inicial  img {
+    position: absolute;    
+    width: 130px;
+    height: 92px;
+    top: 120px;
+    
+}
+
+.inicial input {
+    position: absolute;
+    width: 261px;
+    height: 54px;
+    background: #FFFFFF;
+    border: 1px solid #D7D7D7;
+    box-sizing: border-box;
+    border-radius: 4px;
+    top: 350px;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: #AEAEAE;
+    
+}
+
+.inicial button {
+    position: absolute;
+    width: 109px;
+    height: 45px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #696969;
+    justify-content: center;
+    border: none;
+    border-radius: 10px;
+}
+
+/* nav bar lateral */
+
+nav {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFFFFF;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    
+    
+}
+
+.nav-lateral{
+    position: fixed;
+    width: 70vw;
+    height: 100vh;
+    background-color: rgba(226, 243, 166, 0.486);
+    top: 0px;
+    right: 0px;
+    
+}
+
+.blackout{
+    position: fixed;
+    width: 30vw;
+    height: 100vh;
+    background-color:#000000;
+    opacity: 50%;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.titulo-nav, .titulo-nav2  {
+    width: 100%;
+    height: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.box-todos{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+
+.icone-todos{
+    margin: 10px 10px;
+    font-size: 30px;
+   
+}
+
+.titulo-todos{ 
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin-bottom: 5px;
+        
+}
+
 .hidden {
     display: none;
 }
-
-/* tela de entrada */

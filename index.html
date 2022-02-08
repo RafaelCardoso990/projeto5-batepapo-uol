@@ -11,108 +11,191 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <header>
-        <div class="logo">
-            <img src="/images/logo 1.png" alt="logo">
-        </div>
-        <div class="icone">
-            <ion-icon name="people"></ion-icon>
-        </div>
-    </header>
-
-    <section class="principal">
-
-        <div class="entrou">
-            <div class="horario">
-                <p>(09:21:45)</p>
-            </div>
-            <div class="nome">
-                <p>João</p>
-            </div>  
-            <div class="entrada">
-                <p>entra na sala...</p>
-            </div>
-        </div>
-
-        <div class="mensagem-publica">
-            <div class="horario">
-                <p>(09:21:45)</p>
-            </div>
-            <div class="nome">
-                <p>Maria </p>
-            </div>  
-            <div class="mensagem-direta-publica">
-                <p>para</p>
-            </div>
-            <div class="nome2">
-                <p>João:</p>    
-            </div>
-            <div class="mensagem-direta-publica2">
-                <p>Oi João :)</p>
-            </div>
-        </div>
-
-        <div class="mensagem-publica">
-            <div class="horario">
-                <p>(09:21:45)</p>
-            </div>
-            <div class="nome">
-                <p>Maria </p>
-            </div>  
-            <div class="mensagem-direta-publica">
-                <p>para</p>
-            </div>
-            <div class="nome2">
-                <p>João:</p>    
-            </div>
-            <div class="mensagem-direta-publica2">
-                <p>Oi João :)</p>
-            </div>
-        </div>
-       
-        <div class="mensagem-reservada">
-            <div class="horario">
-                <p>(09:21:45)</p>
-            </div>
-            <div class="nome">
-                <p>Maria </p>
-            </div>  
-            <div class="mensagem-direta-publica">
-                <p>para</p>
-            </div>
-            <div class="nome2">
-                <p>João:</p>    
-            </div>
-            <div class="mensagem-direta-publica2"> 
-                <p>Oi João :)</p>
-            </div>
-        </div>
-
-        <div class="entrou">
-            <div class="horario">
-                <p>(09:21:45)</p>
-            </div>
-            <div class="nome">
-                <p>João</p>
-            </div>  
-            <div class="entrada">
-                <p>entra na sala...</p>
-            </div>
-        </div>
-
+<!-- pagina inicial -->
+    
+    <section class="inicial hidden">
+        <img src="/images/logo 1.png" alt="logo pagina inicial">
+        <input type="text" value="Digite seu nome">
+        <button><p>Entrar</p></button>
     </section>
 
-    <footer>
-        <div class="texto">
-            <input type="text" value="Escreva aqui...">
-        </div>
-        <div class="icon-footer">
-            <ion-icon name="paper-plane-outline"></ion-icon>
-        </div>
-    </footer>
 
-  
+<!-- pagina principal -->
+    <main>   
+        <header>
+            <div class="logo">
+                <img src="/images/logo 1.png" alt="logo">
+            </div>
+            <div class="icone">
+                <ion-icon name="people"></ion-icon>
+            </div>
+        </header>
+
+        <section class="principal">
+
+            <div class="entrou">
+                <div class="horario">
+                    <p>(09:21:45)</p>
+                </div>
+                <div class="nome">
+                    <p>João</p>
+                </div>  
+                <div class="entrada">
+                    <p>entra na sala...</p>
+                </div>
+            </div>
+
+            <div class="mensagem-publica">
+                <div class="horario">
+                    <p>(09:21:45)</p>
+                </div>
+                <div class="nome">
+                    <p>Maria </p>
+                </div>  
+                <div class="mensagem-direta-publica">
+                    <p>para</p>
+                </div>
+                <div class="nome2">
+                    <p>João:</p>    
+                </div>
+                <div class="mensagem-direta-publica2">
+                    <p>Oi João :)</p>
+                </div>
+            </div>
+
+            <div class="mensagem-publica">
+                <div class="horario">
+                    <p>(09:21:45)</p>
+                </div>
+                <div class="nome">
+                    <p>Maria </p>
+                </div>  
+                <div class="mensagem-direta-publica">
+                    <p>para</p>
+                </div>
+                <div class="nome2">
+                    <p>João:</p>    
+                </div>
+                <div class="mensagem-direta-publica2">
+                    <p>Oi João :)</p>
+                </div>
+            </div>
+        
+            <div class="mensagem-reservada">
+                <div class="horario">
+                    <p>(09:21:45)</p>
+                </div>
+                <div class="nome">
+                    <p>Maria </p>
+                </div>  
+                <div class="mensagem-direta-publica">
+                    <p>para</p>
+                </div>
+                <div class="nome2">
+                    <p>João:</p>    
+                </div>
+                <div class="mensagem-direta-publica2"> 
+                    <p>Oi João :)</p>
+                </div>
+            </div>
+
+            <div class="entrou">
+                <div class="horario">
+                    <p>(09:21:45)</p>
+                </div>
+                <div class="nome">
+                    <p>João</p>
+                </div>  
+                <div class="entrada">
+                    <p>entra na sala...</p>
+                </div>
+            </div>
+
+        </section>
+
+        <footer >
+            <div class="texto">
+                <input type="text" value="Escreva aqui...">
+            </div>
+            <div class="icon-footer">
+                <ion-icon name="paper-plane-outline"></ion-icon>
+            </div>
+        </footer>
+    </main>
+ <!-- nav bar lateral  -->
+    <nav class="hidden">
+        <div class="blackout">
+
+        </div>
+        <div class="nav-lateral">
+            <div class="titulo-nav">
+            <h1>Escolha um contato <br>
+                para enviar mensagem:</h1>
+            </div> 
+
+
+            <div class="todos">
+                <div class="box-todos">
+                    <div class="icone-todos">
+                        <ion-icon name="people"></ion-icon>
+                    </div>
+                    <div class="titulo-todos">
+                        <p>Todos</p>
+                    </div>
+                </div>
+
+                <div class="box-todos">
+                    <div class="icone-todos">
+                        <ion-icon name="person-circle-sharp"></ion-icon>
+                    </div>
+                    <div class="titulo-todos">
+                        <p>João</p>
+                    </div>
+                </div>
+
+                <div class="box-todos">
+                    <div class="icone-todos">
+                        <ion-icon name="person-circle-sharp"></ion-icon>
+                    </div>
+                    <div class="titulo-todos">
+                        <p>Maria</p>
+                    </div>
+                </div>
+
+
+
+
+                <div class="titulo-nav-2">
+                    <h1>Escolha a visibilidade:</h1>                       </h1>
+                </div> 
+                <div class="box-todos">
+                    <div class="icone-todos">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </div>
+                    <div class="titulo-todos">
+                        <p>Reservado</p>
+                    </div>
+                </div>
+                <div class="box-todos">
+                    <div class="icone-todos">
+                        <ion-icon name="lock-open"></ion-icon>
+                    </div>
+                    <div class="titulo-todos">
+                        <p>Público</p>
+                    </div>
+                </div>
+
+
+
+            </div>    
+                <div class="">
+
+                </div>
+                
+
+            </div>
+        </div>
+    </nav>
 
 
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
