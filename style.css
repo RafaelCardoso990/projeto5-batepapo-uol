@@ -199,7 +199,7 @@ footer{
 
 /* nav bar lateral */
 
-nav {
+.barra-lateral {
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -207,6 +207,7 @@ nav {
     top: 0px;
     left: 0px;
     display: flex;
+    
     
     
 }
@@ -218,6 +219,7 @@ nav {
     background-color: rgba(226, 243, 166, 0.486);
     top: 0px;
     right: 0px;
+    overflow-y: scroll;
     
 }
 
@@ -255,10 +257,10 @@ nav {
 }
 
 .icone-sair{
-    position: absolute;
+    position: fixed;
     font-size: 30px;
     bottom: 0px;
-    left: 0px;
+    right: 0px;
     
 }
 .titulo-todos{ 
