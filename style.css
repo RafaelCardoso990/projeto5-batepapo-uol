@@ -20,7 +20,9 @@ header{
     z-index: 0;
     
 }
-
+main{
+    z-index: 0;
+}
 footer{
     position: fixed;
     width: 100%;
@@ -223,7 +225,7 @@ nav {
     position: fixed;
     width: 30vw;
     height: 100vh;
-    background-color:#000000;
+    background-color:#0000005d;
     opacity: 50%;
     top: 0px;
     left: 0px;
@@ -235,6 +237,7 @@ nav {
     height: 0 auto;
     text-align: center;
     padding: 20px;
+    
 }
 
 
@@ -251,6 +254,13 @@ nav {
    
 }
 
+.icone-sair{
+    position: absolute;
+    font-size: 30px;
+    bottom: 0px;
+    left: 0px;
+    
+}
 .titulo-todos{ 
     font-family: Roboto;
     font-style: normal;
