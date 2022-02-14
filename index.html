@@ -11,17 +11,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
+
 <!-- pagina inicial -->
-    
-    <section class="inicial hidden">
-        <img src="/images/logo 1.png" alt="logo pagina inicial">
-        <input type="text" value="Digite seu nome">
-        <button><p>Entrar</p></button>
+    <section class="pagina-inicial">
+        <section class="inicial">
+            <img src="/images/logo 1.png" alt="logo pagina inicial">
+            <input type="text" class="usuario"/>
+            <button onclick="entrarNaSala()"><p>Entrar</p></button>
+        </section>
     </section>
 
-
 <!-- pagina principal -->
-    <main>   
+    <main class="hidden">   
         <header>
             <div class="logo">
                 <img src="/images/logo 1.png" alt="logo">
@@ -31,99 +32,20 @@
             </div>
         </header>
 
-        <section class="principal">
-
-            <div class="entrou">
-                <div class="horario">
-                    <p>(09:21:45)</p>
-                </div>
-                <div class="nome">
-                    <p>João</p>
-                </div>  
-                <div class="entrada">
-                    <p>entra na sala...</p>
-                </div>
-            </div>
-
-            <div class="mensagem-publica">
-                <div class="horario">
-                    <p>(09:21:45)</p>
-                </div>
-                <div class="nome">
-                    <p>Maria </p>
-                </div>  
-                <div class="mensagem-direta-publica">
-                    <p>para</p>
-                </div>
-                <div class="nome2">
-                    <p>João:</p>    
-                </div>
-                <div class="mensagem-direta-publica2">
-                    <p>Oi João :)</p>
-                </div>
-            </div>
-
-            <div class="mensagem-publica">
-                <div class="horario">
-                    <p>(09:21:45)</p>
-                </div>
-                <div class="nome">
-                    <p>Maria </p>
-                </div>  
-                <div class="mensagem-direta-publica">
-                    <p>para</p>
-                </div>
-                <div class="nome2">
-                    <p>João:</p>    
-                </div>
-                <div class="mensagem-direta-publica2">
-                    <p>Oi João :)</p>
-                </div>
-            </div>
-        
-            <div class="mensagem-reservada">
-                <div class="horario">
-                    <p>(09:21:45)</p>
-                </div>
-                <div class="nome">
-                    <p>Maria </p>
-                </div>  
-                <div class="mensagem-direta-publica">
-                    <p>para</p>
-                </div>
-                <div class="nome2">
-                    <p>João:</p>    
-                </div>
-                <div class="mensagem-direta-publica2"> 
-                    <p>Oi João :)</p>
-                </div>
-            </div>
-
-            <div class="entrou">
-                <div class="horario">
-                    <p>(09:21:45)</p>
-                </div>
-                <div class="nome">
-                    <p>João</p>
-                </div>  
-                <div class="entrada">
-                    <p>entra na sala...</p>
-                </div>
-            </div>
-
+        <section class="principal">                     
         </section>
 
         <footer >
             <div class="texto">
                 <input type="text" value="Escreva aqui...">
             </div>
-            <div class="icon-footer">
+            <div class="icon-footer" onclick="enviarMensagens()">
                 <ion-icon name="paper-plane-outline"></ion-icon>
             </div>
         </footer>
     </main>
  <!-- nav bar lateral  -->
-    <nav class="barra-lateral">
+    <nav class="barra-lateral hidden">
         <div class="blackout">
 
         </div>
