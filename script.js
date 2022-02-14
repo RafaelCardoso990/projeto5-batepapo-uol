@@ -22,15 +22,15 @@ function tratarErro(erro){
 
 function estaOn(){
     const continuaOn = axios.post('https://mock-api.driven.com.br/api/v4/uol/status', userName);
-    // tratarSucesso e erroAinda
+
 }
+
 
 //chat
 
 function mostrarMensagemChat(){
     setInterval(carregarMensagensChat, 3000);   
-    setInterval(ultimaMensagem, 3000);   
-
+    setInterval(ultimaMensagem, 3000); 
 }
 
 function carregarMensagensChat(){
@@ -39,19 +39,20 @@ function carregarMensagensChat(){
 }
 
 function processarRespostaChat(resposta){
-    let ultimam = resposta.data
-    console.log(ultimam)
-    let ultimamesmo = ultimam[ultimam.length -1]
-    console.log(ultimamesmo)
-    setInterval(ultimamesmo, 3000)
     mostrarMensagensNoChat(resposta.data);
+    
 }
+
+// function pegarUltimaMensagem(respostam){
+    
+// }
 
 function mostrarMensagensNoChat(mensagensChat){
     const mensagens = document.querySelector('.principal')
+    mensagens.innerHTML = ""
     for(let i = 0; i < mensagensChat.length; i++){
         if(mensagensChat[i].type === 'status'){
-        mensagens.innerHTML += `<div class="entrou mensagem">
+        mensagens.innerHTML += `<div class="entrou mensagem" data-identifier="message">
                                     <div class="horario">
                                         <p>(${mensagensChat[i].time})</p>
                                     </div>
@@ -63,7 +64,7 @@ function mostrarMensagensNoChat(mensagensChat){
                                     </div>
                                 </div>`
         }else if(mensagensChat[i].type === 'message'){
-        mensagens.innerHTML += `<div class="mensagem-publica mensagem">
+        mensagens.innerHTML += `<div class="mensagem-publica mensagem" data-identifier="message">
                                     <div class="horario">
                                         <p>(${mensagensChat[i].time})</p>
                                     </div>
@@ -81,7 +82,7 @@ function mostrarMensagensNoChat(mensagensChat){
                                     </div>
                                 </div>  `
         }else if(mensagensChat[i].type === 'private_message'){
-            mensagens.innerHTML += `<div class="mensagem-reservada mensagem">
+            mensagens.innerHTML += `<div class="mensagem-reservada mensagem" data-identifier="message">
                                         <div class="horario">
                                             <p>(${mensagensChat[i].time})</p>
                                         </div>
@@ -98,13 +99,14 @@ function mostrarMensagensNoChat(mensagensChat){
                                             <p>${mensagensChat[i].text}</p>
                                         </div>
                                     </div>  `
+                                   
         }
-        ultimaMensagem();                            
+        ultimaMensagem(); 
     }
 }
 
 function ultimaMensagem(){
-   const ultima = document.querySelector('.principal .mensagem:last-child');
+   const ultima = document.querySelector('.principal .mensagem:last-child');   
    ultima.scrollIntoView();
 }
 
@@ -122,23 +124,19 @@ function formarObjeto(){
     mensagensEnviar.to = "Todos"
     mensagensEnviar.text = document.querySelector('.texto input').value
     mensagensEnviar.type = "message"
-
     console.log(mensagensEnviar)
 }
 
 function postObjeto(){
-    const promessa = axios.post('https://mock-api.driven.com.br/api/v4/uol/messages', mensagensEnviar);
-    promessa.then(sucessoChat);
-    promessa.catch(erroChat);        
-}
-
-function sucessoChat(){
-    
+    const promessa = axios.post('https://mock-api.driven.com.br/api/v4/uol/messages', mensagensEnviar);  
+    promessa.then(carregarMensagensChat);   
+    promessa.catch(erroChat);
 }
 
 function erroChat(){
-    window.location.reload(forcedReload);
+    window.reload.reload(forcedReload)
 }
+
 
 //tela inicial
 

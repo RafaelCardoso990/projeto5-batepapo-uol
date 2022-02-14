@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    word-break: break-word;
 }
 body{
     background: #F3F3F3;
@@ -104,7 +105,7 @@ footer{
 
 .texto input{
     
-    width: 145px;
+    
     height: 30px;
     left: 17px;
     top: 612px;
@@ -115,7 +116,7 @@ footer{
     line-height: 21px;
     display: flex;
     align-items: center;
-
+    border: none;
     color: #000000;
 }
 
@@ -279,3 +280,8 @@ footer{
 .hidden {
     display: none;
 }
+
+footer, input:focus {
+     outline: none;
+}
+
